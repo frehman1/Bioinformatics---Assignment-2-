@@ -16,7 +16,7 @@ if len(sys.argv)!=3: #if this is run it will print the text in the quotation mar
 
 """Opens the data file"""
 infile=sys.argv[1] #This is the name of the input file
-outfile=sys.argv[2] #This is the name of the output file?
+outfile=sys.argv[2] #This is the name of the output file
 
 print("Parsing input file %s, writing results to %s"%(infile, outfile)) #This prints out a message to indicate success with writing the results to the files.
 
@@ -45,7 +45,7 @@ for line in ifh.readlines():
             continue
         if line[1:6]=='Times':
             break        
-        fields=[x.strip() for x in (line[0:6], line[6:11],line[11:16],line[16:21], #this breaks the; lines 1 to 6, 7 to 11, 12 to 16, 17 to 21 onto different lines
+        fields=[x.strip() for x in (line[0:6], line[6:11],line[11:16],line[16:21], #this breaks the; lines 1 to 6, 7 to 11, 12 to 16, 17 to 21 onto a different line 
                 line[21:31],line[31:38], line[38:45],line[45:52], line[52:62], #same as above but for the corresponding lines
                 line[62:72], line[72:82],line[82:89], line[89:99], line[99:109],
                 line[109:119], line[119:126])]
